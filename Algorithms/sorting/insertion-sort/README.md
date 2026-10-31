@@ -22,12 +22,12 @@ Trace on `[5, 2, 4, 1]` (brackets = sorted prefix):
 
 ## Complexity
 
-| Case    | Time     | When                  |
-|---------|----------|-----------------------|
-| Best    | `O(n)`   | already sorted        |
-| Average | `O(n²)`  | random order          |
-| Worst   | `O(n²)`  | reversed order        |
-| Space   | `O(1)`   | always (extra memory) |
+| Case    | Time    | When                  |
+| ------- | ------- | --------------------- |
+| Best    | `O(n)`  | already sorted        |
+| Average | `O(n²)` | random order          |
+| Worst   | `O(n²)` | reversed order        |
+| Space   | `O(1)`  | always (extra memory) |
 
 The number of shifts equals the number of **inversions** (pairs that are out of order), so the running time is `O(n + inversions)`. A sorted array has 0 inversions, and a reversed one has the maximum, `n(n-1)/2`.
 
